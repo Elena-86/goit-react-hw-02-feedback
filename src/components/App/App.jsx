@@ -2,7 +2,7 @@ import { Component } from 'react';
 
 import { SectionContainer } from '../Section/Section.styled';
 import Section from '../Section';
-import FEEDBACK_OPTIONS from '../utils/constants';
+import FEEDBACK_OPTIONS from '../../utils/constants';
 import FeedbackOptions from '../FeedbackOptions';
 import Statistics from '../Statistics';
 
