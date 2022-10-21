@@ -2,7 +2,6 @@ import { Component } from 'react';
 
 import { SectionContainer } from '../Section/Section.styled';
 import Section from '../Section';
-import FEEDBACK_OPTIONS from '../../utils/constants';
 import FeedbackOptions from '../FeedbackOptions';
 import Statistics from '../Statistics';
 
@@ -39,7 +38,7 @@ class App extends Component {
       <SectionContainer>
         <Section title="Please leave feedback">
           <FeedbackOptions
-            options={FEEDBACK_OPTIONS}
+            options={Object.keys(this.state)}
             onLeaveFeedback={this.handleFeedback}
           />
         </Section>
