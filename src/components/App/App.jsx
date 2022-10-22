@@ -12,10 +12,9 @@ class App extends Component {
     bad: 0,
   };
 
-  handleFeedback = ({ target }) => {
-    const { feedback } = target.dataset;
+  handleFeedback = ({ option }) => {
     this.setState(prevState => ({
-      [feedback]: prevState[feedback] + 1,
+      [option]: prevState[option] + 1,
     }));
   };
 
